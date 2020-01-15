@@ -1,0 +1,15 @@
+{
+  "name": "printers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./staticfiles/fonts.js",
+  "dependencies": {
+    "compile-run": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

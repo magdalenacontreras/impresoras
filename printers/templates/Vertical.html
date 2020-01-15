@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Bar Chart</title>
+	<script src="../staticfiles/js/Charts/dist/Chart.min.js"></script>
+	<script src="../staticfiles/js/Charts/utils.js"></script>
+    <script src="../staticfiles/js/Gauge.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="container" style="width: 55%;">
+		<canvas id="canvas"width="400" height="100"></canvas>
+        <canvas id="foo" width="400" height="100"></canvas>
+        <progress id="animationProgress" max="1" value="0" style="width: 100%"></progress>
+	</div>
+	<div id="container1" style="width: 55%;">
+		<canvas id="canvas1"></canvas>
+	</div>
+    <button id="randomizeData">Randomize Data</button>
+	<button id="addDataset">Add Dataset</button>
+	<button id="removeDataset">Remove Dataset</button>
+	<button id="addData">Add Data</button>
+	<button id="removeData">Remove Data</button>
+	<script>
+       	var MONTHS = ['Negro', 'Cyan', 'Magenta', 'Yellow'];
+		var color = Chart.helpers.color;
+		var progress = document.getElementById('animationProgress');
+		var barChartData = {
+			labels: ['Informatica', 'Recursos Humanos'],
+			datasets: [{
+				label: 'Nivel Negro',
+				backgroundColor: color(window.chartColors.black).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.black,
+				borderWidth: 1,
+				data: [50, 20]
+			}, {
+				label: 'Nivel Cyan',
+				backgroundColor:  "rgba(0,255,255,0.5)",
+				borderColor: "rgba(0,255,255,1)",
+				borderWidth: 1,
+				data: [75, 100]
+			}, {
+				label: 'Nivel Magenta',
+				backgroundColor:  "rgba(255,0,255,0.5)",
+				borderColor: "rgba(255,0,255,1)",
+				borderWidth: 1,
+				data: [95, 15]
+			}, {
+				label: 'Nivel Yellow',
+				backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.yellow,
+				borderWidth: 1,
+				data: [15, 30]
+
+			}]
+		};
+		var barChartData1 = {
+			labels: ['Informatica', 'Recursos Humanos'],
+			datasets: [{
+				label: 'Nivel Negro',
+				backgroundColor: color(window.chartColors.black).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.black,
+				borderWidth: 1,
+				data: [50, 20]
+			}, {
+				label: 'Nivel Cyan',
+				backgroundColor:  "rgba(0,255,255,0.5)",
+				borderColor: "rgba(0,255,255,1)",
+				borderWidth: 1,
+				data: [75, 100]
+			}, {
+				label: 'Nivel Magenta',
+				backgroundColor:  "rgba(255,0,255,0.5)",
+				borderColor: "rgba(255,0,255,1)",
+				borderWidth: 1,
+				data: [95, 15]
+			}, {
+				label: 'Nivel Yellow',
+				backgroundColor: color(window.chartColors.yellow).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.yellow,
+				borderWidth: 1,
+				data: [15, 30]
+
+			}]
+		};
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart'
+					},
+					animation: {
+					duration: 2000,
+					onProgress: function(animation) {
+						progress.value = animation.currentStep / animation.numSteps;
+					},
+					onComplete: function() {
+						window.setTimeout(function() {
+							progress.value = 70;
+						}, 2000);
+					}
+				}
+				}
+			});
+			var ctx1 = document.getElementById('canvas1').getContext('2d');
+			window.myBar = new Chart(ctx1, {
+				type: 'bar',
+				data: barChartData1,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Chart.js Bar Chart 1'
+					}
+				}
+			});
+		};
+
+	</script>
+</body>
+
+</html>

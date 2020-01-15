@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
     <!-- Fontastic Custom icon font-->
     <link rel="stylesheet" href="/static/css/fontastic.css">
+    <link rel="stylesheet" href="/static/css/style_light.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <!-- Google fonts - Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <!-- jQuery Circle-->
@@ -38,16 +40,38 @@
       <!-- Counts Section -->
 
 
+<div></div>
 
       <section class="printers statistics">
               <div class="container-fluid">
-                  <div class="row d-flex" id="printer-list">
 
-                  </div>
             </div>
 
-      </section>
 
+      </section>
+      <div id="container">
+            <div class="row">
+                   <div class="col-7">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <div class="col-2">
+                         <ul class="ttw-notification-menu">
+                             <li id="projects" class="notification-menu-item first-item"><a href="index.html#">Errores</a><span class="notification-bubble" title="Notifications" style="background-color: rgb(245, 108, 126); display: inline;">0</span></li>
+                            <li id="tasks" class="notification-menu-item"><a href="index.html#">Tareas</a><span class="notification-bubble" title="Notifications" style="background-color: rgb(254, 193, 81); display: inline;">0</span></li>
+                            <li id="messages" class="notification-menu-item"><a href="index.html#">Mensajes</a><span class="notification-bubble" title="Notifications" style="background-color: rgb(122, 210, 244); display: inline;">0</span></li>
+                         </ul>
+                    </div>
+            </div>
+        <div id="printer-list" class="row"></div>
+        <div style="width: 55%;">
+          <canvas id="foo"></canvas></div>
+        <div id="printer-list-1" class="row"></div>
+        <progress id="animationProgress" max="1" value="0" style="width: 100%"></progress>
+                    <div>
+
+
+            </div>
+	</div>
 
       <footer class="main-footer">
         <div class="container-fluid">
@@ -74,6 +98,14 @@
     <script src="/static/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="/static/js/charts-home.js"></script>
     <!-- Main File-->
-    <script src="/static/js/front.js"></script>
-  </body>
+    <!--<script src="/static/js/front.js"></script>-->
+    <script src="/static/js/Gauge.js"></script>
+    <script src="/static/js/Charts.js"></script>
+    <script src="/static/js/Charts/dist/Chart.min.js"></script>
+	<script src="/static/js/Charts/utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="/static/js/ttw-notification-menu.min.js"></script>
+    <script src="/static/js/demo.js"></script>
+
+    </body>
 </html>

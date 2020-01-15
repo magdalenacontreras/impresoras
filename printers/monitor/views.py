@@ -24,25 +24,36 @@ def home(request):
     return render(request,'index.html')
 
 def info(request):
-
-
     cad = {}
     printers = Printer.objects.all()
     for p in printers:
         printer = p.ip
-        total = mm_walk(oids['total'], client=printer, version='2c')
-        niveles = mm_walk(oids['niveles'], client=printer, version='2c')
-        nombre_cartuchos = mm_walk(oids['nombre_cartuchos'], client=printer, version='2c')
-        colores = mm_walk(oids['colores'], client=printer, version='2c')
-        bandejas = mm_walk(oids['bandejas'], client=printer, version='2c')
-        capacidad_actual = mm_walk(oids['capacidad_actual'], client=printer, version='2c')
-        capacidad_maxima = mm_walk(oids['capacidad_maxima'], client=printer, version='2c')
-        modelo = mm_get(oids['modelo'], client=printer, version='2c')[0][1]
-        serie = mm_get(oids['serie'], client=printer, version='2c')[0][1]
-
-        cad[printer] = {'total': total, 'niveles': niveles, 'nombre_cartuchos': nombre_cartuchos, 'colores': colores,
+        try:
+            total = mm_walk(oids['total'], client=printer, version='2c')
+            #print("/////////////////////total %s" % total)
+            niveles = mm_walk(oids['niveles'], client=printer, version='2c')
+            #print("/////////////////////niveles %s" % niveles)
+            nombre_cartuchos = mm_walk(oids['nombre_cartuchos'], client=printer, version='2c')
+            #print("////////////////////nombre cartuchos %s" % nombre_cartuchos)
+            colores = mm_walk(oids['colores'], client=printer, version='2c')
+            #print("////////////////////colores %s" % colores)
+            bandejas = mm_walk(oids['bandejas'], client=printer, version='2c')
+            #print("////////////////////bandejas %s" % bandejas)
+            capacidad_actual = mm_walk(oids['capacidad_actual'], client=printer, version='2c')
+            #print("///////////////////capacidad_actual %s" % capacidad_actual)
+            capacidad_maxima = mm_walk(oids['capacidad_maxima'], client=printer, version='2c')
+            #print("///////////////////capacidad_maxima %s" % capacidad_maxima)
+            modelo = mm_get(oids['modelo'], client=printer, version='2c')[0][1]
+            #print("///////////////////modelo %s" % modelo)
+            serie = mm_get(oids['serie'], client=printer, version='2c')[0][1]
+            #print("//////////////////serie %s" % serie)
+            cad[printer] = {'nombre': p.nombre, 'total': total, 'niveles': niveles, 'nombre_cartuchos': nombre_cartuchos, 'colores': colores,
                         'bandejas': bandejas, 'capacidad_actual': capacidad_actual,
                         'capacidad_maxima': capacidad_maxima,
                         'modelo': modelo, 'serie': serie,'ip':printer,'id':p.pk}
-
+        except:
+            print("-------------------------------------------------------No funciono ")
+        print("--------------------------------------------------------------------")
+        print(JsonResponse(cad))
+        print("######################################################################")
     return JsonResponse(cad)

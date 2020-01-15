@@ -5,7 +5,7 @@ function update(){
         $.each( data, function( key, val ) {
               items=[]
               items.push( "<div class='col-sm-4'><div class='card data-usage'><h4 class='h5'>" );
-              items.push( val.modelo + "["+val.ip+"]" );
+              items.push( val.nombre + "["+val.ip+"]" );
               items.push( "</h4>" );
               items.push("<div class='row d-flex align-items-center'><div class='col-sm-12'><h3>Cartuchos</h3></div></div>")
               for(i=0;i< val.total.length ;i++){
