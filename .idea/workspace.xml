@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2f321430-ed76-4b23-a249-eaa21eef0841" name="Default Changelist" comment="Version con Graficas">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printers/staticfiles/js/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/printers/staticfiles/js/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printers/staticfiles/js/ttw-notification-menu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/printers/staticfiles/js/ttw-notification-menu.min.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="51acfecc-9061-4f75-bb88-7bd7c5152d9e" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UCzauYCg9ajdi2S9v79ekjESrX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/printers/staticfiles/js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="impresoras-development" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f321430-ed76-4b23-a249-eaa21eef0841" name="Default Changelist" comment="" />
+      <created>1574875431512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574875431512</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Version con Graficas">
+      <created>1579113501659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579113501659</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Version con Graficas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version con Graficas" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="551" y="158" key="#Notifications" timestamp="1579114205249">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="551" y="158" key="#Notifications/0.23.1920.977@0.23.1920.977" timestamp="1579114205249" />
+    <state x="583" y="98" key="CommitChangelistDialog2" timestamp="1579287888205">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="583" y="98" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1579287888205" />
+    <state x="759" y="415" key="Github.CreateGistDialog" timestamp="1579113560718">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="759" y="415" key="Github.CreateGistDialog/0.23.1920.977@0.23.1920.977" timestamp="1579113560718" />
+    <state x="184" y="90" key="MergeDialog" timestamp="1579287405140">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="184" y="90" key="MergeDialog/0.23.1920.977@0.23.1920.977" timestamp="1579287405140" />
+    <state x="658" y="215" width="577" height="552" key="MultipleFileMergeDialog" timestamp="1579287509136">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="658" y="215" width="577" height="552" key="MultipleFileMergeDialog/0.23.1920.977@0.23.1920.977" timestamp="1579287509136" />
+    <state x="460" y="130" key="SettingsEditor" timestamp="1579111746065">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="460" y="130" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1579111746065" />
+    <state x="551" y="233" key="Vcs.Push.Dialog.v2" timestamp="1579289864631">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="551" y="233" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1579289864631" />
+    <state x="644" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579112452137">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="644" y="346" key="com.intellij.ide.util.TipDialog/0.23.1920.977@0.23.1920.977" timestamp="1579112452137" />
+    <state x="644" y="347" key="com.intellij.ide.util.TipDialog/0.23.1920.979@0.23.1920.979" timestamp="1576795898396" />
+    <state x="644" y="346" key="com.intellij.ide.util.TipDialog/0.23.1920.981@0.23.1920.981" timestamp="1578940067637" />
+    <state x="644" y="346" key="com.intellij.ide.util.TipDialog/0.23.1920.985@0.23.1920.985" timestamp="1576695248599" />
+    <state x="615" y="145" width="673" height="693" key="find.popup" timestamp="1576264158720">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="615" y="145" width="673" height="693" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1576264158720" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/printers/monitor/admin.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
