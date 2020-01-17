@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 import logging
+#from pysnmp.hlapi import *
+from pysnmp import hlapi
 
-from pysnmp.hlapi import *
 from subprocess import check_output
 import random
+
 
 debug_snmp = False
 
@@ -123,7 +125,7 @@ def mm_get(oid, community='public', protocol='UDP', client='localhost', port=161
             out = check_output(['snmpget',  '-t',str(timeout),'-v', version, '-c', community, 'TCP:' + client + ":" + str(port), oid]).split(" ")
             return [[0,out[3].replace('"','')]]
         else:
-            out=check_output(['snmpget', '-t',str(timeout),'-v', version, '-c', community,  client + ":" + str(port), oid]).split(" ")
+            out= check_output(['snmpget', '-t',str(timeout),'-v', version, '-c', community,  client + ":" + str(port), oid]).split(" ")
             return [[0,out[3].replace('"','')]]
     except Exception as e:
         logging.exception(e)
@@ -137,14 +139,14 @@ def mm_walk(oid, community='public', protocol='UDP', client='localhost', port=16
             out = check_output(['snmpwalk',  '-t',str(timeout),'-v', version, '-c', community, 'TCP:' + client + ":" + str(port), oid]).split("\n")
             return [[0,out[3]]]
         else:
-            out=check_output(['snmpwalk', '-t',str(timeout),'-v', version, '-c', community,  client + ":" + str(port), oid]).split("\n")
-            print out
+            out= check_output(['snmpwalk', '-t',str(timeout),'-v', version, '-c', community,  client + ":" + str(port), oid]).split("\n")
+            print(out)
             result=[]
             for l in out:
                 if l:
                     r = l.split(" ")
                     if len(r)>=3:
-                        print r[3].replace('"','')
+                        print(r[3].replace('"',''))
                         result.append(r[3].replace('"',''))
 
             return result
